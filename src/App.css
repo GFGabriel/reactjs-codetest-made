@@ -1,0 +1,127 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-image: url("./images/MadeCodeTest-0.png");*/
+  background-size: 100% 119%;
+  height: 100vh;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.App-logo {
+  height: 52vw;
+  margin-top: 3vh;
+}
+
+.App-header {
+  background: linear-gradient(hsl(30,100%,91%), hsl(14,97%,81%));
+  height: 20.87vh;
+  width: 100%;
+  box-shadow: 0 0 2vh #777;
+  display: flex;
+  justify-content: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Nav-bar {
+  background: hsl(300,1%,21%);
+  color: hsl(300,2%,83%);
+  height: 6.2vh;
+  box-sizing: border-box;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width:100%;
+}
+
+.Form {
+  margin-top: 9vh;
+  height: 51%;
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: hsl(0, 1%, 61%);
+  font-size: 1.9vh;
+  margin: .15vh 0 .5vh 0;
+}
+
+
+input {
+  background-color: hsl(0, 0%, 92%);
+  border: none;
+  border-radius: 5px;
+  height: 6vh;
+  margin-bottom: 1vh;
+  padding-left: 2vw;
+  outline: none;
+}
+
+textarea {
+  background-color: hsl(0, 0%, 92%);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1vh;
+  padding-left: 2vw;
+  padding-top: 2vh;
+  height: 16vh;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.Save-button-container {
+  width: 86%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.4vh;
+  height: 6.3%;
+}
+
+.Footer {
+  background: hsl(300,1%,21%);
+  height: 3vh;
+  margin-top: 2.2vh;
+  width: 100%;
+}
+
+h1 {
+  margin-top: 2.8%;
+  margin-left: 26%;
+  font-size: 2.65vh;
+  letter-spacing: .14vw;
+}
+
+@media screen and (min-width: 360px) {
+  h1 {
+    margin-left: 29.4%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .App-logo {
+    height: 38vw;
+  }
+
+  .Nav-bar {
+    height: 8.2vh;
+  }
+
+  h1 {
+    margin-left: 35.4%;
+    font-size: 3.65vh;
+  }
+
+  textarea,
+  input {
+    font-size: 2vh;
+  }
+
+}
+

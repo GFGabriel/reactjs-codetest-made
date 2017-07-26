@@ -1,0 +1,91 @@
+.Menu-button {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    height: 48px;
+    margin-top: -2.36px;
+    min-height: 48px;
+    min-width: 48px;
+    padding: 0px;
+    width: 48px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.Menu-button:hover, .Menu-button:focus, .Menu-button:active {
+    outline: none;
+}
+
+.Menu-button.Active > .Bar {
+    background-color: transparent;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.Menu-button.Active > .Bar:before {
+    -webkit-transform: rotate(45deg) translate(4px, 9px);
+    transform: rotate(45deg) translate(4px, 9px);
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 28px;
+    left: 1px;
+}
+.Menu-button.Active > .Bar:after {
+    -webkit-transform: rotate(-45deg) translate(3px, -7px);
+    transform: rotate(-45deg) translate(3px, -7px);
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 28px;
+    left: 1px;
+}
+
+.Bar {
+    background-color: hsl(21,100%,87%);
+    width: 24px;
+    height: 3px;
+    margin: 4px auto;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.Bar:before,
+.Bar:after {
+    content: '';
+    border-radius: 3px;
+    width: 24px;
+    height: 3px;
+    margin: 4px auto;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.Bar:before {
+    top: -12px;
+    left: 0px;
+    background: -webkit-linear-gradient(hsl(30,100%,91%), hsl(21,100%,87%));
+    background: linear-gradient(hsl(30,100%,91%), hsl(21,100%,87%));
+}
+
+.Bar:after {
+    bottom: -12px;
+    left: 0px;
+    background: -webkit-linear-gradient(hsl(21,100%,87%), hsl(14,97%,81%));
+    background: linear-gradient(hsl(21,100%,87%), hsl(14,97%,81%));
+}
+
+@media screen and (min-width: 360px) {
+    .Menu-button {
+        margin-top: -5.36px;
+    }
+}
+
+
