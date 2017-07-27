@@ -88,4 +88,47 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .Menu-button {
+        height: 96px;
+        margin-top: -2.36px;
+        width: 96px;
+    }
+
+    .Menu-button.Active > .Bar:before {
+        -webkit-transform: rotate(45deg) translate(8px, 18px);
+        transform: rotate(45deg) translate(8px, 18px);
+        width: 56px;
+        left: 2px;
+    }
+    .Menu-button.Active > .Bar:after {
+        -webkit-transform: rotate(-45deg) translate(6px, -14px);
+        transform: rotate(-45deg) translate(6px, -14px);
+        width: 56px;
+        left: 2px;
+    }
+
+    .Bar {
+        width: 48px;
+        height: 6px;
+        margin: 8px auto;
+        border-radius: 6px;
+    }
+
+    .Bar:before,
+    .Bar:after {
+        border-radius: 6px;
+        width: 48px;
+        height: 6px;
+        margin: 8px auto;
+    }
+
+    .Bar:before {
+        top: -24px;
+    }
+
+    .Bar:after {
+        bottom: -24px;
+    }
+}
 
